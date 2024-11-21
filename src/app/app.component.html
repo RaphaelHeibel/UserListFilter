@@ -8,12 +8,12 @@
     <div class="main-left-div">
       <!-- conteúdo da div esquerda (80% da altura) -->
 
-      <app-users-list></app-users-list>
+      <app-users-list [usersList]="usersList" (userSelected)="onUserSelected($event)"></app-users-list>
 
     </div>
   </div>
   <div class="right-div">
     <!-- conteúdo da div direita -->
-    <app-user-details [user]="userSelected"></app-user-details>
+    <app-user-details [user]="userSelected" *ngIf="showUserDetails"></app-user-details>
   </div>
 </div>
