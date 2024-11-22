@@ -16,7 +16,7 @@ export const UsersList: IUser[] = [
     telefone: "11912345678",
     ativo: true,
     funcao: "Desenvolvedor",
-    dataCadastro: "2023-08-01T09:00:00.000Z",
+    dataCadastro: "",
     status: {
       online: true,
       verificado: true,
